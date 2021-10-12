@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　好人："></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　"></TextView>
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TableRow>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/people" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/people_red" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/people_blue" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/people_green" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="平民"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平民"
+                android:layout_gravity="center"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="預言家"
+                android:layout_gravity="center"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="守衛"
+                android:layout_gravity="center"></TextView>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　壞人："></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　"></TextView>
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TableRow>
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:src="@drawable/people_pink"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:src="@drawable/people_purple"
+                android:layout_gravity="center"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="狼人"
+                android:layout_gravity="center"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="狼人"
+                android:layout_gravity="center"></TextView>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

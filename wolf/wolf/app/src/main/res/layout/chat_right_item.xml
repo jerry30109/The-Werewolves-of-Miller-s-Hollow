@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_image_chat_right"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/right_job"
+            android:text="job"
+            android:layout_below="@id/profile_image_chat_right"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="8dp"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/textMessage_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_chat_right"
+            android:text="HELLO!"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

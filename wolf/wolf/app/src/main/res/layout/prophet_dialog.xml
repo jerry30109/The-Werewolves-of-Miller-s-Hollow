@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_dialog"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你今晚要查誰 . . . "
+        android:id="@+id/tvpro"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="25dp"
+        />
+    <RadioGroup
+        android:id="@+id/proRadioGroup"
+        android:layout_below="@id/tvpro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/tvpro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <RadioButton
+            android:id="@+id/prorb1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people"
+            android:button="@null"
+            android:layout_margin="5dp"
+            />
+        <RadioButton
+            android:id="@+id/prorb2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_red"
+            android:button="@null"
+            android:layout_margin="5dp"
+            />
+        <RadioButton
+            android:id="@+id/prorb3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_blue"
+            android:button="@null"
+            android:layout_margin="5dp"/>
+        <RadioButton
+            android:id="@+id/prorb4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_green"
+            android:button="@null"
+            android:layout_margin="5dp" />
+        <RadioButton
+            android:id="@+id/prorb5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_pink"
+            android:button="@null"
+            android:layout_margin="5dp"  />
+        <RadioButton
+            android:id="@+id/prorb6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_purple"
+            android:button="@null"
+            android:layout_margin="5dp" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer"
+        android:id="@+id/proCountDown"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proRadioGroup"
+        android:layout_marginBottom="25dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

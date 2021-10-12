@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="匿名狼人殺"
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="請選擇性別"
+        android:textSize="50dp" />
+
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sex"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="男"
+            android:id="@+id/boy"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            android:background="@drawable/selector_orange_radiobutton"
+            android:layout_marginRight="50dp"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="女"
+            android:id="@+id/girl"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            android:background="@drawable/selector_orange_radiobutton"
+            android:button="@null"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:text="開始匹配"
+        android:textSize="50dp"
+        />
+
+</RelativeLayout>

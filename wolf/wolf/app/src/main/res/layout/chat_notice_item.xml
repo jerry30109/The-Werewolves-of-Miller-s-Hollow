@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMessage_notice"
+        android:layout_marginLeft="5dp"
+        android:text="HELLO!"
+        android:textColor="@color/cardview_dark_background"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_chat_left"/>
+
+</RelativeLayout>
