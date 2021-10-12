@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndingChatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/endbar_layout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/endtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:id="@+id/tvendHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房間XXXX號"
+                android:textSize="25dp"/>
+
+
+            <Button
+                android:id="@+id/btn_endreturn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="返回標題"
+                android:textSize="15dp"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endbar_layout"
+        android:id="@+id/endLinear_Layout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            android:id="@+id/endprofile_image1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/people" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            android:id="@+id/endprofile_image2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/profile_image1"
+            android:src="@drawable/people_red" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            android:id="@+id/endprofile_image3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/profile_image2"
+            android:src="@drawable/people_blue" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            android:id="@+id/endprofile_image4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/profile_image3"
+            android:src="@drawable/people_green" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="1"
+            android:id="@+id/endprofile_image5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/profile_image4"
+            android:src="@drawable/people_pink" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/endprofile_image6"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/profile_image5"
+            android:src="@drawable/people_purple"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/endLinear_layout2"
+        android:layout_below="@id/endLinear_Layout"
+        android:background="@drawable/underline"
+
+        >
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/enduser1"
+            android:text="男A"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/enduser2"
+            android:text="男B"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/enduser1" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/enduser3"
+            android:text="男C"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/enduser2"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/enduser4"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/enduser3"
+            android:text="女A"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/enduser5"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/enduser4"
+            android:text="男D"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/enduser5"
+            android:id="@+id/enduser6"
+            android:text="女B"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/endrecycler_view"
+        android:layout_below="@id/endLinear_layout2"
+        android:layout_above="@id/endbottom"/>
+
+    <RelativeLayout
+        android:id="@+id/endbottom"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/endtextSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/endbtn_send"
+            android:layout_centerVertical="true"
+            android:textSize="25dp"
+            android:background="@android:color/transparent"
+            android:hint="Type a message . . ."/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/endbtn_send"
+            android:background="@drawable/ic_action_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "178170311795",
+    "firebase_url": "https://wolffirebaseapp.firebaseio.com",
+    "project_id": "wolffirebaseapp",
+    "storage_bucket": "wolffirebaseapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178170311795:android:9b64cd56d1081f05b0e606",
+        "android_client_info": {
+          "package_name": "com.example.wolf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178170311795-lacijke6eguru1eu5frj4iqjg9jf327s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wolf",
+            "certificate_hash": "3cd59c2344ab85f6a346f2e6c44050269cd0e57d"
+          }
+        },
+        {
+          "client_id": "178170311795-9fq3501ouhv20nca32hjgtjilcl7e3sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkdRUDi-gAlY0lxWzpdtOJeQEceIp26A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178170311795-9fq3501ouhv20nca32hjgtjilcl7e3sg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

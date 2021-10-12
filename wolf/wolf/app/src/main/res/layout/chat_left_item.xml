@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/profile_image_chat_left"
+        android:src="@drawable/people"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_job"
+        android:text="job"
+        android:layout_below="@id/profile_image_chat_left"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="8dp"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMessage_left"
+        android:layout_marginLeft="5dp"
+        android:text="HELLO!"
+        android:padding="8dp"
+        android:layout_toRightOf="@id/profile_image_chat_left"
+        android:background="@drawable/background_chat_left"/>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_dialog"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你要投給誰 . . . "
+        android:id="@+id/tvVote"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer"
+        android:id="@+id/CountDown"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/VoteRadioGroup"
+        android:layout_marginBottom="25dp"
+        />
+    <RadioGroup
+        android:id="@+id/VoteRadioGroup"
+        android:layout_below="@id/tvVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/tvVote"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <RadioButton
+            android:id="@+id/Voterb1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people"
+            android:button="@null"
+            android:layout_margin="5dp"
+            />
+        <RadioButton
+            android:id="@+id/Voterb2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_red"
+            android:button="@null"
+            android:layout_margin="5dp"
+            />
+        <RadioButton
+            android:id="@+id/Voterb3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_blue"
+            android:button="@null"
+            android:layout_margin="5dp"/>
+        <RadioButton
+            android:id="@+id/Voterb4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_green"
+            android:button="@null"
+            android:layout_margin="5dp" />
+        <RadioButton
+            android:id="@+id/Voterb5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_pink"
+            android:button="@null"
+            android:layout_margin="5dp"  />
+        <RadioButton
+            android:id="@+id/Voterb6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/people_purple"
+            android:button="@null"
+            android:layout_margin="5dp" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UNvotebutton"
+        android:layout_below="@id/VoteRadioGroup"
+        android:text="不投票"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/VoteRadioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
